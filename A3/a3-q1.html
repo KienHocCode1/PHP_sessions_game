@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!--
+    @author   Tom Lovie <tom.lovie@mohawkcollege.ca
+    @purpose  Client side code for COMP 10260 Assignment 3
+    @revision 2023.35.0
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="a3-q1.js"></script>
+    <title>COMP 10260 Assignment 3</title>
+</head>
+
+<body>
+    <header class='text-center'>
+        <h1>COMP 10260 Assignment 3</h1>
+        <h2 id='student_info'></h2>
+    </header>
+
+    <main class="text-center">
+        <h1>Game of NIM</h1>
+
+        <!-- Radio buttons for starting difficulty -->
+        <div class="m-2">
+            <label for="difficulty">Starting difficulty:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="diff" name="diff" value="0">
+            <label for="easy">easy</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="diff" name="diff" value="1" checked="checked">
+            <label for="hard">optimal</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+
+        <!-- Radio buttons for number of stones -->
+        <div class="m-2">
+            <label for="Stones">Enter the number of stones to take:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="player_move" name="player_move" value="1">
+            <label for="1">1</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="player_move" name="player_move" value="2" checked="checked">
+            <label for="2">2</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="player_move" name="player_move" value="3">
+            <label for="3">3</label>
+        </div>
+
+        <!-- Container for displaying results -->
+        <div id="resultContainer"></div>
+
+        <!-- Buttons for selecting mode of game -->
+        <div class="m-2">
+            <button id="Reset">Reset the game</button>
+            <button id="Play">Play next move</button>
+            <p style="color:blue">Player please click again to see computer's next move</p>
+        </div>
+
+    </main>
+
+    <footer class="text-center">
+        Submitted for credit to Mohawk College, &copy;2023.
+    </footer>
+</body>
+
+</html>
